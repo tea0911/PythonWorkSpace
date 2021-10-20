@@ -1,0 +1,14 @@
+fruits = ['バナナ','リンゴ','オレンジ']
+n = input("果物をカタカナで入力してください：")
+judge = n in fruits
+
+while judge is True:
+    print (f"{n}は、知っています！")
+    if judge is False:
+        print(f"{n}は、知りませんでした。覚えておきます。")
+    n = input("果物をカタカナで入力してください：")
+    judge = n in fruits
+
+    
+print('知っている果物')
+print(fruits)
